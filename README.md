@@ -15,6 +15,7 @@ A beautiful, easy-to-customize "About Me" website template perfect for sharing y
 - 🚀 **No Build Required** - Just edit and open in your browser
 - ♿ **Accessible** - Built with accessibility best practices
 - 📱 **Mobile-First** - Optimized for all screen sizes
+- 📂 **Example Included** - See a fully customized example in the `examples/` folder
 
 ## 🚀 Quick Start (For Complete Beginners)
 
@@ -84,6 +85,8 @@ Try these color codes:
 2. Double-click it to open in your web browser
 3. Admire your new About Me page! 🎉
 
+> 💡 **Tip:** Check out the `examples/example.html` file to see a fully customized version for inspiration!
+
 ## 📤 How to Publish Your Website
 
 ### Option 1: GitHub Pages (Free & Easy)
@@ -148,10 +151,15 @@ Don't want the Interests section? Delete lines 131-162 in `index.html`
 ```
 AboutMeTemplate/
 │
-├── index.html      # Main HTML file (your content goes here)
-├── style.css       # Styling file (colors, layout, design)
-├── script.js       # JavaScript file (theme toggle, animations)
-└── README.md       # This file (instructions)
+├── index.html                 # Main HTML file (your content goes here)
+├── style.css                  # Styling file (colors, layout, design)
+├── script.js                  # JavaScript file (theme toggle, animations)
+├── README.md                  # This file (instructions)
+├── CUSTOMIZATION-GUIDE.md     # Step-by-step customization checklist
+├── .gitignore                 # Git ignore file
+└── examples/                  # Example implementations
+    ├── README.md              # About the examples
+    └── example.html           # Fully customized example page
 ```
 
 ## 🆘 Troubleshooting
@@ -198,6 +206,16 @@ AboutMeTemplate/
 --accent-color: #ff6b35;
 --bg-primary: #2b1a1a;
 ```
+
+## 📂 Examples
+
+Want to see a completed example? Check out the `examples/` folder!
+
+- **example.html** - A fully customized "About Me" page for "Alex Rivera"
+- Shows how to customize colors, content, and social links
+- Great reference when building your own page
+
+Open `examples/example.html` in your browser to see it in action!
 
 ## 🤝 Contributing
 
