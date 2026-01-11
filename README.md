@@ -6,6 +6,8 @@ A beautiful, easy-to-customize "About Me" website template perfect for sharing y
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 
+> 🚀 **Super Quick Start:** If you're in a hurry, check out [QUICKSTART.md](QUICKSTART.md) for 3 simple steps!
+
 ## ✨ Features
 
 - 🎨 **Modern & Responsive Design** - Looks great on all devices (desktop, tablet, mobile)
