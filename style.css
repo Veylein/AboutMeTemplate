@@ -1,0 +1,380 @@
+/* ===================================
+   About Me Template - Style Sheet
+   Easy to customize for non-developers!
+   =================================== */
+
+/* Import a nice font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===================================
+   ROOT VARIABLES
+   These control the colors throughout the site
+   CUSTOMIZE: Change these color values to match your style!
+   =================================== */
+
+:root {
+    /* Light mode colors */
+    --bg-primary: #f5f7fa;
+    --bg-secondary: #ffffff;
+    --text-primary: #2d3748;
+    --text-secondary: #718096;
+    --accent-color: #667eea;
+    --accent-hover: #5a67d8;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --border: #e2e8f0;
+    
+    /* Spacing */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    /* Border radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+}
+
+/* Dark mode colors */
+[data-theme="dark"] {
+    --bg-primary: #1a202c;
+    --bg-secondary: #2d3748;
+    --text-primary: #f7fafc;
+    --text-secondary: #cbd5e0;
+    --accent-color: #805ad5;
+    --accent-hover: #9f7aea;
+    --shadow: rgba(0, 0, 0, 0.3);
+    --border: #4a5568;
+}
+
+/* ===================================
+   BASE STYLES
+   =================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    min-height: 100vh;
+    padding: var(--spacing-lg);
+}
+
+/* ===================================
+   THEME TOGGLE BUTTON
+   =================================== */
+
+.theme-toggle {
+    position: fixed;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px var(--shadow);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    background: var(--accent-hover);
+    transform: scale(1.1);
+}
+
+/* ===================================
+   MAIN CONTAINER
+   =================================== */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 30px var(--shadow);
+    padding: var(--spacing-xl);
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===================================
+   PROFILE SECTION
+   =================================== */
+
+.profile-section {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--border);
+}
+
+.profile-image {
+    margin-bottom: var(--spacing-lg);
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: var(--radius-full);
+    object-fit: cover;
+    border: 5px solid var(--accent-color);
+    box-shadow: 0 8px 16px var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.05);
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+/* ===================================
+   SECTION STYLES
+   =================================== */
+
+section {
+    margin-bottom: var(--spacing-xl);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-primary);
+    font-weight: 600;
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    border-radius: var(--radius-sm);
+}
+
+/* ===================================
+   ABOUT SECTION
+   =================================== */
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+/* ===================================
+   SOCIAL LINKS SECTION
+   =================================== */
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg);
+    background: var(--bg-primary);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    border: 2px solid var(--border);
+    gap: var(--spacing-sm);
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--shadow);
+}
+
+.social-link i {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.social-link span {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Social link specific colors */
+.social-link.discord:hover { background: #5865F2; color: white; border-color: #5865F2; }
+.social-link.twitter:hover { background: #1DA1F2; color: white; border-color: #1DA1F2; }
+.social-link.instagram:hover { background: #E4405F; color: white; border-color: #E4405F; }
+.social-link.youtube:hover { background: #FF0000; color: white; border-color: #FF0000; }
+.social-link.twitch:hover { background: #9146FF; color: white; border-color: #9146FF; }
+.social-link.tiktok:hover { background: #000000; color: white; border-color: #000000; }
+.social-link.github:hover { background: #333333; color: white; border-color: #333333; }
+.social-link.linkedin:hover { background: #0A66C2; color: white; border-color: #0A66C2; }
+.social-link.email:hover { background: var(--accent-color); color: white; border-color: var(--accent-color); }
+
+/* ===================================
+   INTERESTS SECTION
+   =================================== */
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.interest-card {
+    background: var(--bg-primary);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid var(--border);
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--shadow);
+    border-color: var(--accent-color);
+}
+
+.interest-card i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.interest-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.interest-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+footer {
+    text-align: center;
+    padding-top: var(--spacing-lg);
+    border-top: 2px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   Makes the site look good on mobile devices
+   =================================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: var(--spacing-md);
+    }
+    
+    .container {
+        padding: var(--spacing-lg);
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .social-links {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    
+    .interests-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: var(--spacing-md);
+    }
+    
+    .theme-toggle {
+        width: 45px;
+        height: 45px;
+        top: var(--spacing-md);
+        right: var(--spacing-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .name {
+        font-size: 1.8rem;
+    }
+    
+    .social-links {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===================================
+   CUSTOM COLORS
+   Want to add your own colors? Add them here!
+   Example:
+   .social-link.your-platform:hover {
+       background: #YOUR_COLOR;
+       color: white;
+       border-color: #YOUR_COLOR;
+   }
+   =================================== */
