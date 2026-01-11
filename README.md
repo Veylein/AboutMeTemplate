@@ -32,7 +32,7 @@ Open the files in a text editor (like Notepad on Windows, TextEdit on Mac, or do
 
 Look for comments that say `<!-- CUSTOMIZE: ... -->` - these show you exactly what to change:
 
-1. **Your Name & Title** (Lines 39-40)
+1. **Your Name & Title** (Lines 37-38)
    ```html
    <h1 class="name">Your Name Here</h1>
    <p class="tagline">Content Creator | Gamer | Artist</p>
@@ -44,19 +44,19 @@ Look for comments that say `<!-- CUSTOMIZE: ... -->` - these show you exactly wh
    ```
    Replace the URL with your image link or use a local file like `src="my-photo.jpg"`
 
-3. **About Me Bio** (Lines 46-51)
+3. **About Me Bio** (Lines 45-51)
    ```html
    <p>
        Hey there! 👋 Welcome to my corner of the internet...
    </p>
    ```
 
-4. **Social Media Links** (Lines 64-119)
+4. **Social Media Links** (Lines 67-122)
    - Replace `YOUR_USERNAME` or `YOUR_DISCORD_ID` with your actual usernames
    - Remove any social links you don't use (delete the entire `<a>` tag)
    - Keep the ones you want!
 
-5. **Interests** (Lines 130-153)
+5. **Interests** (Lines 131-161)
    - Change the icons, titles, and descriptions to match your interests
    - Add or remove interest cards as needed
 
@@ -141,7 +141,7 @@ The template uses "Poppins" from Google Fonts. To use a different font:
 
 ### Removing Sections
 
-Don't want the Interests section? Delete lines 124-165 in `index.html`
+Don't want the Interests section? Delete lines 131-162 in `index.html`
 
 ## 📁 File Structure
 

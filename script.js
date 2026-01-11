@@ -129,14 +129,9 @@ document.addEventListener('DOMContentLoaded', function() {
    Add your own JavaScript functions below!
    =================================== */
 
-// Example: Function to update the current year automatically
-function updateYear() {
-    const yearElements = document.querySelectorAll('.current-year');
-    const currentYear = new Date().getFullYear();
-    yearElements.forEach(element => {
-        element.textContent = currentYear;
-    });
-}
-
-// Call it when the page loads
-updateYear();
+// You can add your own custom functions here
+// Example ideas:
+// - Add a visitor counter
+// - Add a contact form
+// - Add music player controls
+// - Add image galleries

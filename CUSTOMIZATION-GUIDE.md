@@ -4,10 +4,10 @@ Use this checklist to customize your About Me page step by step!
 
 ## ✅ Basic Information
 
-- [ ] Change your name (index.html, line 39)
-- [ ] Update your tagline/title (index.html, line 40)
-- [ ] Write your bio (index.html, lines 48-50)
-- [ ] Update footer with your name (index.html, line 160)
+- [ ] Change your name (index.html, line 37)
+- [ ] Update your tagline/title (index.html, line 38)
+- [ ] Write your bio (index.html, lines 45-51)
+- [ ] Update footer with your name (index.html, line 166)
 
 ## 🖼️ Visual Elements
 
@@ -18,7 +18,7 @@ Use this checklist to customize your About Me page step by step!
 
 ## 🔗 Social Media Links
 
-Update your usernames in index.html (lines 64-119):
+Update your usernames in index.html (lines 67-122):
 
 - [ ] Discord - Replace `YOUR_DISCORD_ID`
 - [ ] Twitter/X - Replace `YOUR_USERNAME`
@@ -36,7 +36,7 @@ Delete the entire `<a>` tag for any platform you don't want to display.
 
 ## 🎯 Interests Section
 
-In index.html (lines 130-153):
+In index.html (lines 131-161):
 
 - [ ] Update interest #1 (Gaming)
 - [ ] Update interest #2 (Digital Art)
